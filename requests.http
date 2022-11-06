@@ -1,0 +1,14 @@
+GET http://localhost:3000/devices
+
+POST http://localhost:3000/workers
+Content-Type: application/json
+
+{
+   "nombre": "Nombre 1",
+   "edad": 25,
+   "departamento": "Sistemas",
+   "puesto": "Programador Junior",
+   "telefono": "0000000001",
+   "jefe": 3,
+   "dispositivo": 742930
+}
