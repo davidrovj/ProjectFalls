@@ -16,6 +16,7 @@ require('./routes/bossRoutes')(app)
 require('./routes/workerRoutes')(app)
 require('./routes/deviceRoutes')(app)
 require('./routes/paramsRoutes')(app)
+require('./routes/recordRoutes')(app)
 
 // static files
 

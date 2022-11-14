@@ -1,14 +1,11 @@
-GET http://localhost:3000/devices
+#GET http://localhost:3001/record
 
-POST http://localhost:3000/workers
+POST http://localhost:3001/record
 Content-Type: application/json
 
 {
-   "nombre": "Nombre 1",
-   "edad": 25,
-   "departamento": "Sistemas",
-   "puesto": "Programador Junior",
-   "telefono": "0000000001",
-   "jefe": 3,
-   "dispositivo": 742930
+   "trabajador": "1",
+   "dispositivo": 742930,
+   "hora": "08:39:23",
+   "fecha": "2022-11-09"
 }
