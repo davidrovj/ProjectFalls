@@ -14,7 +14,7 @@ let modelHistorial = {}
 modelHistorial.getHistorial = (callback) => {
     if (connection) {
         connection.query(
-            'SELECT * FROM historial ORDER BY trabajador',
+            'SELECT historial.dispositivo, historial.fecha, historial.hora, trabajador.nombre FROM historial INNER JOIN trabajador ON historial.trabajador = trabajador.id',
             (err, rows) => {
                 if(err) {
                     throw err
