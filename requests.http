@@ -1,6 +1,6 @@
-#GET http://localhost:3001/record
+GET http://localhost:3001/workers
 
-POST http://localhost:3001/record
+POST http://localhost:3001/workers
 Content-Type: application/json
 
 {

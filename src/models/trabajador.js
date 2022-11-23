@@ -14,7 +14,7 @@ let modelTrabajador = {}
 modelTrabajador.getTrabajadores = (callback) => {
     if (connection) {
         connection.query(
-            'SELECT * FROM trabajador ORDER BY id',
+            'SELECT trabajador.id,trabajador.nombre,trabajador.edad,trabajador.departamento,trabajador.puesto,trabajador.telefono,jefe.nombre as jefe,dispositivo,jefe.telefono as jefe_telefono FROM trabajador INNER JOIN jefe ON trabajador.jefe=jefe.id WHERE trabajador.id=1',
             (err, rows) => {
                 if(err) {
                     throw err

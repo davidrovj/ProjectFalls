@@ -28,7 +28,7 @@ modelDispositivo.getDispositivos = (callback) => {
 modelDispositivo.insertDispositivo = (dispositivoData, callback) => {
     if (connection) {
         connection.query(
-            'INSERT INTO trabajador SET ?', dispositivoData,
+            'INSERT INTO dispositivo SET ?', dispositivoData,
             (err, result) => {
                 if (err) {
                     throw err
