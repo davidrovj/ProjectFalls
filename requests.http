@@ -1,11 +1,11 @@
-GET http://localhost:3001/workers
+GET http://localhost:3001/record
 
-POST http://localhost:3001/workers
+POST http://localhost:3001/record
 Content-Type: application/json
 
 {
    "trabajador": "1",
    "dispositivo": 742930,
    "hora": "08:39:23",
-   "fecha": "2022-11-09"
+   "fecha": "2022-12-01"
 }
